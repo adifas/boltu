@@ -86,7 +86,7 @@
     <section class="bg-white dark:bg-gray-900">
         <div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
             <div class="mr-auto place-self-center lg:col-span-7">
-                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">Your AI Agent in Slack</h1>
+                <h1 id="header1" class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">AI Agent for Slack</h1>
                 <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Helps your team to work efficiently by eliminating repeatative web search research and looking for internal company documents. Just ask @boltu in Slack and the answer will be there instantly.</p>
                 <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
                     <a href="https://slack.com/oauth/v2/authorize?client_id=8385624488194.8382802442965&scope=app_mentions:read,assistant:write,channels:history,chat:write,chat:write.public&user_scope="><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
@@ -631,5 +631,27 @@
         </div>
     </footer>
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script>
+        function rotateText(elementId, values, interval = 3000) {
+            let index = 0;
+            const element = document.getElementById(elementId);
+            if (!element) {
+                console.error(`Element with ID '${elementId}' not found.`);
+                return;
+            }
+            
+            function updateText() {
+                element.textContent = "AI Agent for " + values[index];
+                index = (index + 1) % values.length;
+            }
+            
+            updateText(); // Set initial text
+            setInterval(updateText, interval);
+        }
+
+        // Example usage
+        const values = ["Slack", "Zoom", "Jira", "Teams", "Github"];
+        rotateText("header1", values);
+    </script>
 </body>
 </html>
