@@ -1,0 +1,156 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  /* Limit page width to ~980px, similar to Facebook */
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #f3f4f6;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 5%;
+  }
+  
+  nav h1 {
+    font-size: 1.5rem;
+    color: #7b61ff;
+    display: flex; /* So the image and text can be aligned horizontally */
+    align-items: center;
+  }
+  
+  /* Image icon for top h1 */
+  .icon {
+    width: 30px;          /* Adjust as needed */
+    height: auto;         /* Maintain aspect ratio */
+    margin-right: 0.5rem; /* Spacing between icon and text */
+    vertical-align: middle;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #7b61ff;
+  }
+  
+  .btn-signup {
+    background-color: #7b61ff;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-signup:hover {
+    background-color: #6a50e5;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to right, #7b61ff, #bd99ff);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    max-width: 600px;
+    margin: 0.5rem auto 2rem auto;
+    line-height: 1.5;
+  }
+  
+  .btn-cta {
+    background-color: #fff;
+    color: #7b61ff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-cta:hover {
+    background-color: #f4f4f4;
+    color: #6a50e5;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem 5%;
+    background-color: #fff;
+  }
+  
+  .feature-card {
+    max-width: 300px;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+  
+  .feature-card img {
+    width: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Call to Action */
+  .call-to-action {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #bd99ff;
+    color: #fff;
+  }
+  
+  .call-to-action h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .call-to-action p {
+    margin-bottom: 2rem;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #fff;
+    color: #333;
+  }
+  
