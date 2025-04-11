@@ -1,5 +1,6 @@
 {
     "endpoint": "https://d132tlymqd66xk.cloudfront.net/prod",
+    "wss_endpoint": "wss://d368vr844kf4y7.cloudfront.net",
     "oauth2_endpoint_suffix": "/oauth2/v2/login",
     "summarizer_endpoint": "/summary",
     "google_api_client_id": "414613983979-61ejlsrq8a3nkkeh11c595ksmvg5qum4.apps.googleusercontent.com",
